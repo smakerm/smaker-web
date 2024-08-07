@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "models.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/smaker_web/models.py",
+            "cwd": "${workspaceFolder}/smaker_web",
+            "console": "internalConsole",
+            "addSourceRootsToPythonpath": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}"
+            }
+        },
+        {
+            "name": "config.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/smaker_web/core/config.py",
+            "cwd": "${workspaceFolder}/smaker_web/core",
+            "console": "internalConsole",
+            "addSourceRootsToPythonpath": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}"
+            }
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "currentFileConfiguration": true,
+            "cwd": "${fileDirname}",
+            "console": "internalConsole",
+            "addSourceRootsToPythonpath": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}"
+            }
+        }
+    ]
+}

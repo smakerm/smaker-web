@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "smaker-web"
+version = "0.1.0"
+description = ""
+authors = ["smakerm <944791169@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.112.0"}
+typer = "^0.12.3"
+sqlmodel = "^0.0.21"
+alembic = "^1.13.2"
+asyncpg = "^0.29.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
